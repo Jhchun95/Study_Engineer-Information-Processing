@@ -1,6 +1,7 @@
 package mydolist;
 
-// 기사 시험 코딩
+// 추상 클래스와 상속을 이용한 코딩
+// super의 개념과 extends의 개념 숙지해보기
 
 abstract class Vehicle {
 	String name;
