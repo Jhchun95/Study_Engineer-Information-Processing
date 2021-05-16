@@ -1,5 +1,7 @@
 package mydolist;
+// 상속에 대한 개념을 확인하는 프로젝트
 
+// 부모 A
 class A {
 	int a;
 	public A(int a) {
@@ -9,6 +11,7 @@ class A {
 		System.out.println("a=" + a);
 	}
 }
+// 자식 B
 class B extends A {
 	public B(int a) {
 		super(a);
