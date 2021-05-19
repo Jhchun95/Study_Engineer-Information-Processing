@@ -15,10 +15,13 @@ public class Etc5 {
 		// char형으로의 형 변환이 필요하다.
 		int i = c1 + 1;
 		
+		// (char) = 캐스팅
+		// 계산
 		c3 = (char)(c1 + 1);
 		c2++;
 		c3++;
 		
+		// 출력
 		System.out.println("i=" + i);
 		System.out.println("c2=" + c2);
 		System.out.println("c3=" + c3);
