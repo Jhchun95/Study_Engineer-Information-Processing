@@ -3,6 +3,8 @@ package mydolist;
 public class Etc7 {
 
 	// 405
+	// 인스턴스멤버 간에는 서로 직접 접근이 가능하다.	
+	// static 멤버 간에는 서로 직접 접근이 가능하다.
 	class InstanceInner {
 		int iv = 100;
 //		static int cv = 100;
