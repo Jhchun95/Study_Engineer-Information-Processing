@@ -5,7 +5,8 @@ public class Exam5 {
 		int result = factorial(4);
 		System.out.println(result);
 	}
-
+	
+	// 재귀함수 static 클래스
 	static int factorial(int n) {
 //		int result = 0;
 		if(n==1) 
