@@ -5,6 +5,7 @@ package mydolist;
 
 // 추상메소드 : 자식 클래스에서 재정의해야만 사용할 수 있는 메소드
 //	ex) Car => 트럭, 승용차, 버스 등등
+// 프로그래밍 구조는 평소에 쓰던 부모클래스 구조와 비슷하다.
 abstract class Vehicle {
 	String name;
 	abstract public String getName(String val);
