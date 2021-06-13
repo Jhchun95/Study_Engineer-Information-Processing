@@ -15,6 +15,7 @@ public class Exam4 {
 		s.close();
 	}
 	
+	// 재귀함수 클래스 복습.613
 	static int recursive(int n) {
 		// 정수형 i
 		int i;
