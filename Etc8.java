@@ -20,7 +20,7 @@ public class Etc8 {
 	}
 
 }
-
+// Tv 클래스
 class Tv {
 	String color;
 	boolean power;
