@@ -12,6 +12,7 @@ public class Etc9 {
          for(int i=0; i< numArr.length-1; i++) {
             
             // 자리바꿈이 발생했는지를 체크한다.
+            // boolean은 true, false로 체크
             boolean changed = false;
             for(int j=0; j< numArr.length-1-i; j++) {
                if(numArr[j] > numArr[j+1]) {
