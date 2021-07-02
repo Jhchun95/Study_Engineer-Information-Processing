@@ -6,9 +6,10 @@ public class Exam10 {
 	static int[] arr() {
 		// a[] 배열의 크기는 4이다. ex) 0 , 1 , 2, 3
 		int a[] = new int[4];
-		// 배열의 길이
+		// b는 a 배열의 길이
 		int b = a.length;
 		// 길이 b 보다 작은 경우까지 for문 동작
+                // b = a.length 결국, 같은 의미이다
 		for(int i=0; i< b; i++) 
 			a[i] = i;
 			return a;
