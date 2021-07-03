@@ -18,7 +18,7 @@ public class Exam9 {
 				// 계산
 				hap = hap+j;
 		}
-		// 
+		// print 결과값 140
 		System.out.printf("%d", hap);
 		
 	}
