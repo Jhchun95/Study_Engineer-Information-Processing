@@ -17,6 +17,7 @@ public class Etc9 {
             for(int j=0; j< numArr.length-1-i; j++) {
                if(numArr[j] > numArr[j+1]) {
                   // 옆의 값이 작으면 서로 바꾼다.
+                  // 서로 자리바꾸는 코드인데 변수 선언하는 방식으로 생각하면 이해하기 편하다.
                   int temp = numArr[j];
                   numArr[j] = numArr[j+1];
                   numArr[j+1] = temp;
