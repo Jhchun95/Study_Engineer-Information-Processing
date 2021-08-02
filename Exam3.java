@@ -1,5 +1,6 @@
 package mydolist;
 
+// 0803 study
 public class Exam3 {
 	public static void main(String[] args) {
 		// 8개의 메모리 공간을 배열로 선언한다.
