@@ -19,7 +19,10 @@ class Test2 extends Test{
 
 public class Etc10 {
 	public static void main(String[] args) {
+		// 객체 선언
+		// 앞은 Test 클래스 A 이고, 뒤는 Test2 클래스이다. 변수 잘 보기
 		Test A = new Test2();
+		// Sample(2)의 함수값과 실행값을 잘 보도록 한다.
 		System.out.print(A.sample(2));
 	}
 }
