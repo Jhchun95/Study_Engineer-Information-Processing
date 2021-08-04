@@ -16,6 +16,7 @@ public class Exam4 {
 	}
 	
 	// 재귀함수 클래스 복습.613
+	// 실행되는 순서 기억하기.
 	static int recursive(int n) {
 		// 정수형 i
 		int i;
