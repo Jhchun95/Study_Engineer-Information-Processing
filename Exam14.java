@@ -23,6 +23,7 @@ class B extends A {
 		super.display();
 	}
 }
+//sefsefsdfsdfsef
 public class Exam14 {
 	public static void main(String[] args) {
 		// 객체 생성
