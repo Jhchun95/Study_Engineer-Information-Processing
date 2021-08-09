@@ -23,7 +23,7 @@ class B extends A {
 		super.display();
 	}
 }
-//sefsefsdfsdfsef
+// 메인클래스, 객체 생성해서 실행한 곳
 public class Exam14 {
 	public static void main(String[] args) {
 		// 객체 생성
