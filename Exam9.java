@@ -12,6 +12,7 @@ public class Exam9 {
 		// hap = 0으로 설정
 		int hap = 0;
 		//  i[]의 위치 값에 따라 a의 값은 달라진다.
+		// for문 숙지
 		for(int i[]: a) {
 			// hap의 시작값은 0이고, j는 곧 i의 값이다.
 			// for문 입력할 때, : 의 의미도 잘 알고 있어야한다.
