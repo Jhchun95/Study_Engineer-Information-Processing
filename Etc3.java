@@ -5,6 +5,7 @@ public class Etc3 {
 		String src = "ABCDE";
 		
 		for(int i=0; i< src.length(); i++) {
+			// char형 숙지하기
 			// src의 i번째 문자를 ch에 저장
 			char ch = src.charAt(i);
 			System.out.println("src.charAt("+i+":" + ch);
