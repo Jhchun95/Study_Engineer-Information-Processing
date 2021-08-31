@@ -1,0 +1,173 @@
+-- [실습1] 날짜/시간 데이터 다루기(1)
+
+-- 현재 시간 조회하는 방법
+select now();
+
+now                |
+-------------------+
+2021-07-23 16:42:29|
+
+-- 현재시간보다 하루 전 날짜 구하는 방법
+select now(), now()::date - '1 day' ::interval;
+
+now                |?column?           |
+-------------------+-------------------+
+2021-07-23 16:42:46|2021-07-22 00:00:00|
+
+-- 현재 타임존 조회하는 방법
+show timezone;
+
+TimeZone  |
+----------+
+Asia/Seoul|
+
+--시스템 일자를 조회하는 방법
+select current_date, current_time, timeofday(); 
+
+current_date|current_time|timeofday                          |
+------------+------------+-----------------------------------+
+  2021-07-23|    16:43:07|Fri Jul 23 16:43:07.255820 2021 KST|
+
+select now(), current_timestamp, timestamp 'now';
+
+now                |current_timestamp  |timestamp          |
+-------------------+-------------------+-------------------+
+2021-07-23 16:43:19|2021-07-23 16:43:19|2021-07-23 16:43:19|
+
+-- 날짜에서 연도를 추출하는 방법 (date_part, extract, date_trunc 각각 결과가 어떻게 다른지 비교해보세요.)
+select date_part('year', timestamp '2020-07-30 20:38:40');
+
+date_part|
+---------+
+   2020.0|
+
+select date_part('year', current_timestamp);
+
+date_part|
+---------+
+   2021.0|
+
+select extract('isoyear' from date '2006-01-01');
+
+date_part|
+---------+
+   2005.0|
+
+select extract('isoyear' from current_timestamp);
+
+date_part|
+---------+
+   2021.0|
+
+select date_trunc('year', timestamp '2020-07-30 20:38:40');
+
+date_trunc         |
+-------------------+
+2020-01-01 00:00:00|
+
+select date_trunc('year', current_timestamp);
+
+date_trunc         |
+-------------------+
+2021-01-01 00:00:00|
+
+-- 날짜에서 월을 추출하는 방법 (date_part, extract, date_trunc 각각 결과가 어떻게 다른지 비교해보세요.)
+select date_part('month', timestamp '2020-07-30 20:38:40');
+
+date_part|
+---------+
+      7.0|
+
+select date_part('month', current_timestamp);
+
+date_part|
+---------+
+      7.0|
+
+select extract('month' from timestamp '2020-07-30 20:38:40');
+
+date_part|
+---------+
+      7.0|
+
+select extract('month' from interval '2 years 3 months');
+
+date_part|
+---------+
+      3.0|
+
+select extract('month' from interval '2 years 13 months');
+
+date_part|
+---------+
+      3.0|
+
+select date_trunc('month', timestamp '2020-07-30 20:38:40'); -- 월까지만 나오고 나머지는 초기화로 맞누는 방법임
+
+date_trunc         |
+-------------------+
+2020-07-01 00:00:00|
+
+-- 날짜에서 일을 추출하는 방법
+select date_part('day', timestamp '2020-07-30 20:38:40');
+
+date_part|
+---------+
+     30.0|
+
+select date_trunc('day', timestamp '2020-07-30 20:38:40'); -- 일자까지만 나오고 나머지는 초기화로 맞누는 방법임
+
+date_trunc         |
+-------------------+
+2020-07-30 00:00:00|
+
+-- 시간에서 시를 추출하는 방법
+select date_part('hour', timestamp '2013-07-30 20:38:40');
+
+date_part|
+---------+
+     20.0|
+
+select date_part('hour', interval '4 hours 3 minutes');
+
+date_part|
+---------+
+      4.0|
+
+select date_trunc('hour', timestamp '2020-07-30 20:38:40');
+
+date_trunc         |
+-------------------+
+2020-07-30 20:00:00|
+
+-- 시간에서 분을 추출하는 방법
+select date_part('minute', timestamp '2020-07-30 20:38:40');
+
+date_part|
+---------+
+     38.0|
+
+select date_trunc('minute', timestamp '2020-07-30 20:38:40');
+
+date_trunc         |
+-------------------+
+2020-07-30 20:38:00|
+
+-- 시간에서 초를 추출하는 방법
+select date_part('second',timestamp '2013-07-30 20:38:40'); 
+
+date_part|
+---------+
+     40.0|
+
+select extract('second' from time '17:12:28.5');
+
+date_part|
+---------+
+     28.5|
+
+select date_trunc('second', timestamp '2013-07-30 20:38:40');
+
+date_trunc         |
+-------------------+
+2013-07-30 20:38:40|
