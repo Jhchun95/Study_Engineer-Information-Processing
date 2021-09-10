@@ -20,12 +20,14 @@ public class Etc8 {
 	}
 
 }
-// Tv 클래스
+// Tv 클래스를 만들어서 선언
 class Tv {
+	// 변수 선언
 	String color;
 	boolean power;
 	int channel;
 	
+	// 메소드 생성
 	void power() {
 		power =! power;
 	}
