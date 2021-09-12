@@ -30,6 +30,7 @@ public class Etc7 {
 	
 	// 출력
 	public static void main(String[] args) {
+			// 각각에 맞는 메소드 클래스로 이동해서 실행하게 된다.
 			System.out.println(InstanceInner.CONST);
 			System.out.println(StaticInner.cv);
 	}
