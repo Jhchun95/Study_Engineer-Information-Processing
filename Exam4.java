@@ -20,12 +20,13 @@ public class Exam4 {
 	static int recursive(int n) {
 		// 정수형 i
 		int i;
-		// 재귀함수 호출하게 도와주는 
+		// 재귀함수 루프 돌 수 있게 해주는 if else문
 		if(n<1)
 			return 2;
 		else {
 			i = ( 2 * recursive(n-1)) + 1;
 			System.out.println(i);
+			// i로 return하고 다시 recursive(int n)로 반복 
 			return i;
 		}
 	}
