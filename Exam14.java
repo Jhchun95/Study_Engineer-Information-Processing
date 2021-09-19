@@ -10,15 +10,16 @@ class A {
 	}
 	// display()
 	void display() {
-		// 출력
+		// 상속됨으로 이것으로 출력
 		System.out.println("a=" + a);
 	}
 }
 // 자식 B
-// 상속
+// 상속 확인
 class B extends A {
 	// class A로 이동
 	public B(int a) {
+		// super 확인
 		super(a);
 		super.display();
 	}
@@ -27,6 +28,7 @@ class B extends A {
 public class Exam14 {
 	public static void main(String[] args) {
 		// 객체 생성
+		// B 클래스의 10의 값을 넣어 실행한다.
 		B obj = new B(10);
 	}
 
