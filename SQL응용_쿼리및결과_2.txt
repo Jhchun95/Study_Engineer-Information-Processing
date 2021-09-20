@@ -1,5 +1,6 @@
 -- [실습2-1] 변환함수
 
+// select * from (Table명) where (조건문)
 -- 주수 구하기
 SELECT EMP_NAME, to_char((current_timestamp - ENT_DATE),'W') WEEKS
 FROM cslee.TB_EMP
