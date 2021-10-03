@@ -14,6 +14,7 @@ class Parents {
 // 부모클래스에서 상속받는 자식 클래스
 class Childs extends Parents{
 	int compute(int num)  {
+		// 재귀함수
 		if(num<=1) return num;
 		return compute(num-1) + compute(num-3);
 	}
