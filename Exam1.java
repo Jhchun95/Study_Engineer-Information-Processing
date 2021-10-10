@@ -34,6 +34,7 @@ class Car extends Vehicle {
 public class Exam1 {
 	public static void main(String[] args) {
 		// 객체 선언
+		// 입력된 값의 데이터 형을 확인하고, Car의 알맞은 함수에 대입한다.
 		Vehicle obj = new Car("Spark");
 		// 출력값 : 	Vehicle name : Spark
 		System.out.print(obj.getName());
