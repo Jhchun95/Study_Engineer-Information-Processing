@@ -15,7 +15,7 @@ public class Exam7 {
 			for(int j=0; j<5; j++) {
 				// 선언된 배열의 위치에 따라 값을 기입하게끔 계산
 				arry[i][j] = j * 3 + i + 1;
-				// 값 출력
+				// 각각의 배열 i와 j에 맞는 값 출력
 				System.out.print(arry[i][j] + " ");
 			}
 			System.out.println();
