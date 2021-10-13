@@ -34,6 +34,7 @@ public class Etc11 {
 		System.out.printf("%c", c);
 		scan.close();
 		
+		// 우선
 		// 우선순위 1 : x++ , x-- , (), [], . , ->
 		// 우선순위 2 : ++x , --x , +x, -x, !, ~ , *x
 		// 우선순위 3 : * , /, %
