@@ -12,6 +12,7 @@ public class Etc8 {
 			tvArr[i].channel = i + 10;
 		}
 		
+                // for문으로 반복
 		for(int i=0; i < tvArr.length; i++) {
 			tvArr[i].channelUp();
 			System.out.printf("tvArr[%d].channel = %d%n", i, tvArr[i].channel);
