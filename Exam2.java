@@ -24,6 +24,7 @@ class Child extends Parent {
 public class Exam2 {
 	public static void main(String[] args) {
 		// 객체를 생성한다.
+		// Parent 클래스에서 obj 변수를 선언하는데 있어, new 로 지정된 곳은 child 이다.
 		Parent obj = new Child();
 		// obj.compute(4)에 대한 것을 출력한다.
 		System.out.println(obj.compute(4));
