@@ -1,5 +1,5 @@
 -- [실습4-1] Equi Join 실습
-
+-- 뜻 점검/ 12.26
 -- 사원 테이블과 조직 테이블의 조인 sql
 select tb_emp.emp_name, tb_emp.org_cd, tb_org.org_cd, tb_org.org_name
 from cslee.tb_emp, cslee.tb_org 
