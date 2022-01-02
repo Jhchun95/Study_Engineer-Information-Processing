@@ -14,6 +14,7 @@ public class Etc9 {
             // 자리바꿈이 발생했는지를 체크한다.
             // boolean은 true, false로 체크
             boolean changed = false;
+            // numArr.length : numArr의 길이갯수
             for(int j=0; j< numArr.length-1-i; j++) {
                if(numArr[j] > numArr[j+1]) {
                   // 옆의 값이 작으면 서로 바꾼다.
