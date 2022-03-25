@@ -42,6 +42,13 @@ public class Etc12 {
 //				
 //		ParentGame.Print();
 //		ChildGame.Print();
+
+// 출력 
+// 내가 고른 게임의 이름은 카트라이더
+// 1
+// 내가 안 고른 게임의 이름은 메이플스토리
+// 2		
+		
 	}
 
 }
