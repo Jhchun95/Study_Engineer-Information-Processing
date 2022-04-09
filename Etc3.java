@@ -20,6 +20,9 @@ public class Etc3 {
 			// char배열(char[])을 출력
 			System.out.println(chArr);
 			
+			// 번외로 for(자료형 변수명 : 배열명){ } 된 형식도 존재한다. 
+			//
+			
 		}
 	}
 }
