@@ -5,7 +5,8 @@ public class Exam8 {
 	public static void main(String[] args) {
 		// String 문자열 Programming 에 대하여 선언한다.
 		String str = "Programming";
-		// n = str 문자열의 길이를 뜻한다.
+		// n = str 문자열의 길이를 뜻한다.(=str.length() )
+		// 총 11
 		int n = str.length();
 		
 		// char형 배열로 선언한다.
@@ -17,7 +18,8 @@ public class Exam8 {
 			st[n-k] = str.charAt(k);
 		}
 
-		// 최종적으로 Programming 역순으로 출력한다.
+		// 위 for문의 출력되는 값에 따라 최종적으로 Programming 역순으로 출력한다.
+		// k의 값이 st일 때
 		for(char k : st) {
 			System.out.printf("%c", k);
 		}
