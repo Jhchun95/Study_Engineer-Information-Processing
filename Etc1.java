@@ -21,15 +21,19 @@ public class Etc1 {
 
 }
 
+// 비슷한 예문이라 주석으로 처리 C언어 문법
 // #include <stdio.h>
  
 // int main(){
+// 배열 포인터 및 배열 선언
 // int *arr[3];
+// 변수 선언
 // int a = 12, b = 24, c = 36;
 // arr[0] = &a;
 // arr[1] = &b;
 // arr[2] = &c;
  
+// 계산
 // printf("%d\n", *arr[1] + **arr + 1);
  
 // }
