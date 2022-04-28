@@ -19,7 +19,8 @@ public class Exam8 {
 		}
 
 		// 위 for문의 출력되는 값에 따라 최종적으로 Programming 역순으로 출력한다.
-		// k의 값이 st일 때
+		// for each문 , 보통 배열 변수명으로 입력하여 인덱스 첫번째 자리부터 차례대로 값이 자동적으로 기입된다.
+		// 'k의 값이 st일 때'라는 의미 
 		for(char k : st) {
 			System.out.printf("%c", k);
 		}
